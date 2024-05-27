@@ -8,12 +8,20 @@
     "build": "parcel build src/index.html",
     "start": "npm run build && live-server dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllenHo2/Music-Master.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AllenHo2/Music-Master/issues"
+  },
+  "homepage": "https://github.com/AllenHo2/Music-Master#readme",
   "dependencies": {
     "live-server": "^1.2.2",
-    "parcel": "^2.11.0",
+    "parcel": "^2.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
