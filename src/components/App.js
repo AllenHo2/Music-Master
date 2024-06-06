@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Artist from "./Artist";
+import Tracks from "./Tracks";
 
 const API_ADDRESS = "https://spotify-api-wrapper.appspot.com/"; //API address
 class App extends Component {
@@ -40,7 +41,7 @@ class App extends Component {
     console.log("this.state", this.state);
     return (
       <div>
-        <h2>Music Master</h2>
+        <h2>Music</h2>
         <input
           onChange={this.updateArtistQuery} //any changes to input calls updateArtistQuery
           onKeyDown={this.handleKeyDown} //pressing Enter calls this method
@@ -50,6 +51,7 @@ class App extends Component {
         {/*On Click, calls search Artist method*/}
         <Artist artist={this.state.artist} />{" "}
         {/*Call Artist componentn and pass down artist object from this.state.artist as a prop*/}
+        <Tracks tracks={this.state.tracks} />
       </div>
     );
   }
